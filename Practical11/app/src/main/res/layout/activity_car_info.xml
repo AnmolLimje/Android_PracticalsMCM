@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CarInfo">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/carImage"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:src="@drawable/lambo" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:gravity="center">
+                <Button
+                    android:id="@+id/btnColorRed"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="#FF1D00"
+                    android:layout_marginRight="10dp"/>
+
+                <Button
+                    android:id="@+id/btnColorBlack"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="#2A0000"
+                    android:layout_marginRight="10dp"/>
+
+                <Button
+                    android:id="@+id/btnColorGreen"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="#E8CF66"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                android:text="Lamborghini Aventador"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="30dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#c0c0c0"
+                android:padding="20dp" />
+
+            <TableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="50dp"
+                android:accessibilityLiveRegion="none"
+                android:showDividers="none">
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="20dp"
+                        android:text="Launch Date:"
+                        android:textColor="#000000" />
+
+                    <TextView
+                        android:id="@+id/launchDate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="20dp"
+                        android:text="2-Feb-2020" />
+
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="20dp"
+                        android:text="Company Name:"
+                        android:textColor="#000000" />
+
+                    <TextView
+                        android:id="@+id/companyName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="20dp"
+                        android:text="Lamborghini" />
+
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="20dp"
+                        android:text="Engine:"
+                        android:textColor="#000000" />
+
+                    <TextView
+                        android:id="@+id/engineName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="20dp"
+                        android:text="6.5 L L539 V12" />
+
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="20dp"
+                        android:text="Transmission:"
+                        android:textColor="#000000" />
+
+                    <TextView
+                        android:id="@+id/transmissionName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="20dp"
+                        android:text="‎7-speed ISR semi-automatic" />
+
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="20dp"
+                        android:text="Height:"
+                        android:textColor="#000000" />
+
+                    <TextView
+                        android:id="@+id/height"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="20dp"
+                        android:text="‎‎1,136 mm (44.7 in)" />
+
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="20dp"
+                        android:text="Length:"
+                        android:textColor="#000000" />
+
+                    <TextView
+                        android:id="@+id/length"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="20dp"
+                        android:text="‎4,780 mm (188.2 in)" />
+
+                </TableRow>
+
+
+            </TableLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

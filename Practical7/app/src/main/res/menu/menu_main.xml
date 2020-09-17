@@ -1,0 +1,16 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.practical.practical7.MainActivity">
+    <item
+        android:id="@+id/actionRed"
+        android:orderInCategory="100"
+        android:title="@string/Red"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/actionGreen"
+        android:title="@string/Green"/>
+
+    <item android:id="@+id/actionBlue"
+        android:title="@string/Blue"/>
+</menu>
